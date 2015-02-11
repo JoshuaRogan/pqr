@@ -23,9 +23,9 @@ class global_config{
 	public static $ios_webapp			= "yes"; 
 	public static $ios_status_bar_col	= "black"; 
 	public static $ios_title			= "iOS Title";	//Inherit in page config
-	public static $ios_icons			= false; 
+	public static $ios_icons			= false;
 
-	public static $global_stylesheets	= array("styles/bootstrap.css", "styles/stylesheet.css","//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700"); 
+	public static $global_stylesheets	= array("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css", "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700"); 
 	public static $global_javascript	= array("//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js","//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js", "js/index.js"); 
 
 

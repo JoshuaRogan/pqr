@@ -19,6 +19,17 @@
 	@media (min-width: @screen-lg-min) {}
 }
 
+//Highligther color 
+::-moz-selection {
+    background: @theme-light-aqua;
+    color: white;
+}
+
+::selection {
+    background: @theme-light-aqua;
+    color: white;
+}
+
 body{
 	nav{
 		//Logo Placement in the navbar 
@@ -32,6 +43,7 @@ body{
 	.page-home{
 		h1#molecule-name{
 			font-size: 23px;
+			padding-left: 10px;
 			/* Small devices (tablets, 768px and up) */
 			@media (min-width: @screen-sm-min) {font-size: 30px;}
 			/* Medium devices (desktops, 992px and up) */
