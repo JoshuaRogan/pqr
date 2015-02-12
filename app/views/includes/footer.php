@@ -59,7 +59,7 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Browse</a></li>
 				<li><a href="#">News</a></li>
-				<li><a href="#">Acknowledgments/a></li>
+				<li><a href="#">Acknowledgments</a></li>
 			</ul>
 		</div>
 	</div>
