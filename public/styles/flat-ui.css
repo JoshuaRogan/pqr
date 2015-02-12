@@ -4153,9 +4153,6 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 .navbar-toggle:focus:before {
   color: #1abc9c;
   }
-.navbar-toggle .icon-bar {
-  display: none;
-  }
 @media (min-width: 768px) {
   .navbar-toggle {
     display: none;
