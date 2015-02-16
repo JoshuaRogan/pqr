@@ -1,4 +1,25 @@
-<!-- QR CODE MODAL--> 
+<!-- QR CODE MODAL-->
+<style>
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;}
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:300px; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
+</style>
 
 <div class="modal fade" id="qrcodemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -18,31 +39,31 @@
 </div>
 
 
-<!-- QR CODE MODAL --> 
+<!-- QR CODE MODAL -->
 
 <div class="container">
-	<div class="molecule row"> 
+	<div class="molecule row">
 		<!-- Molecule name as h1 for SEO-->
 		<h1 id="molecule-name">
 			<a class="visible-xs-inline" href="#" data-toggle="modal" data-target="#qrcodemodal"><i class="fa fa-qrcode"></i></a> Methyl 2-Hydroxybenzoate
 			<!-- Icon to display an alternate more detailed  view -->
-			<span class="hidden-xs pull-right small"><a href="#"><i class="fa fa-expand"></i></a></span> 
+			<span class="hidden-xs pull-right small"><a href="#"><i class="fa fa-expand"></i></a></span>
 		</h1>
 
 
-		<!--This is where the canvas/img/js will be for the molecule viewer (Using an image for tempalte--> 
+		<!--This is where the canvas/img/js will be for the molecule viewer (Using an image for tempalte-->
 		<div id="molecule-viewer" class="col-sm-12 col-md-7 col-md-push-5">
-			<img src="http://placehold.it/800x750" class="img-responsive"> 
+			<img src="http://placehold.it/800x750" class="img-responsive">
 		</div>
 
-		<section id="molecule-details"> 
+		<section id="molecule-details">
 
 
 			<div id="molecule-properties" class="col-sm-12 col-md-5 col-md-pull-7">
 				<div class="panel panel-default">
 					<!-- Default panel contents -->
 					<div class="panel-heading">
-					<h2>Properties <span class='pull-right properties-view-options'> <a href="#">All</a> | <a href="#">Detailed</a> | <a href="#">Simple</a></span> </h2> 
+					<h2>Properties <span class='pull-right properties-view-options'> <a href="#">All</a> | <a href="#">Detailed</a> | <a href="#">Simple</a></span> </h2>
 					</div>
 
 					<div class="panel-body">
@@ -52,25 +73,33 @@
 					<!-- Table for all of the properties -->
 
 					<table class="table">
-						<thead> 
+						<thead>
 
 						</thead>
 
-						<tbody> 
-							<tr class="molecule-iupac-name"> 
-								<td>IUPAC Name<sup><a href="#"><i class="fa fa-question"></i></a></sup></td> 
+						<tbody>
+							<tr class="molecule-iupac-name">
+								<td>IUPAC Name<sup><!--First tooltip-->
+                <a href="#" class="tooltip">
+                    <i class="fa fa-question">
+                    <span>
+                        <img class="callout" src="img/callout.gif" />
+                        <strong>IUPAC Name</strong><br />
+                        Test Tooltip
+                    </span>
+                </a></i></sup></td>
 								<td>methyl 2-hydroxybenzoate</td>
 							</tr>
 
-							<tr class="molecule-alt-names"> 
-								<td>Alt. Names<sup><a href="#"><i class="fa fa-question"></i></a></sup></td> 
+							<tr class="molecule-alt-names">
+								<td>Alt. Names<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
 								<td>methyl-salicylate</td>
 							</tr>
 
-							<tr class="molecule-cas-numbers"> 
-								<td>CAS Number(s)<sup><a href="#"><i class="fa fa-question"></i></a></sup></td> 
+							<tr class="molecule-cas-numbers">
+								<td>CAS Number(s)<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
 								<td>
-									<ul class="list-unstyled">  
+									<ul class="list-unstyled">
 										<li>119-36-8</li>
 							            <li>8022-86-4</li>
 							            <li>8024-54-2</li>
@@ -78,30 +107,30 @@
 								</td>
 							</tr>
 
-							<tr class="molecule-molecular-weight"> 
+							<tr class="molecule-molecular-weight">
 								<td>Molecular Weight<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
 								<td>152.1494 g·mol<sup>−1</sup></td>
 							</tr>
 
-							<tr class="molecule-volume"> 
+							<tr class="molecule-volume">
 								<td>Volume<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
-								<td>175.59</td> <!-- Units? --> 
+								<td>175.59</td> <!-- Units? -->
 							</tr>
 
-							<tr class="molecule-formula"> 
+							<tr class="molecule-formula">
 								<td>Formula<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
-								<td>C<sub>8</sub>H<sub>8</sub>O<sub>3</sub></td> <!--Will use JS to automatically add subscripts --> 
+								<td>C<sub>8</sub>H<sub>8</sub>O<sub>3</sub></td> <!--Will use JS to automatically add subscripts -->
 							</tr>
 
-							<tr class="molecule-pg-symmetry"> 
+							<tr class="molecule-pg-symmetry">
 								<td>Point Group Symmetry<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
-								<td>C<sub>1</sub></td> <!--Will use JS to automatically add subscripts --> 
+								<td>C<sub>1</sub></td> <!--Will use JS to automatically add subscripts -->
 							</tr>
 
-							<tr class="molecule-dipole-movement"> 
+							<tr class="molecule-dipole-movement">
 								<td>Dipole Moment<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
 								<td>
-									<ul class="list-unstyled">  
+									<ul class="list-unstyled">
 										<li>0.192</li>
 										<li>0.800</li>
 										<li>-0.312</li>
@@ -109,26 +138,26 @@
 								</td>
 							</tr>
 
-							<tr class="molecule-inchikey"> 
+							<tr class="molecule-inchikey">
 								<td>inchikey<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
-								<td>OSWPMRLSEDHDFF-UHFFFAOYSA-N</td> 
+								<td>OSWPMRLSEDHDFF-UHFFFAOYSA-N</td>
 							</tr>
 
-							<tr class="molecule-qr-code"> 
+							<tr class="molecule-qr-code">
 								<td>Qr Code<sup><a href="#"><i class="fa fa-question"></i></a></sup></td>
-								<td> <a href="#" data-toggle="modal" data-target="#qrcodemodal"> Generate QR Code </a></td> 
+								<td> <a href="#" data-toggle="modal" data-target="#qrcodemodal"> Generate QR Code </a></td>
 							</tr>
 
 
 						</tbody>
 					</table>
 				</div>
-			</div> 
-		</section> <!-- End Properties Section --> 
+			</div>
+		</section> <!-- End Properties Section -->
 
 
 
-	</div> <!-- End Molecule --> 
+	</div> <!-- End Molecule -->
 
 
 
