@@ -169,3 +169,11 @@ body footer a:hover {
 #defaultfont {
   font-size: 75%;
 }
+.tt-dropdown-menu {
+  background-color: #fff;
+}
+.tt-dropdown-menu .tt-dataset-molecules .tt-suggestions div.tt-suggestion {
+  font-size: 8px !important;
+  padding: 2px !important;
+  color: blue;
+}

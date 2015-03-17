@@ -6,20 +6,38 @@ pqr.propertiesFormatter = pqr.propertiesFormatter || {}; //Functions to properly
 
 pqr.threeDMole = pqr.threeDMole || {}; //Everything relating to 3dmol FILE: pqr.threedmol.js
 
+pqr.typeahead = pqr.typeahead || {}; //Everything relating to typeahead plugin 
 
 $(document).ready(function() {
-	pqr.htmlUtilities.toolTipOptIn(); 
-    pqr.htmlUtilities.updateMoleculeView(); 
-    pqr.htmlUtilities.fontSizeChanger(0);
+	
+	//All Pages 
+	pqr.htmlUtilities.fontSizeChanger(0);
 
-    //Binding 
-    pqr.bindevents.moleculeSizeChanger(); 
-    pqr.bindevents.fontSizeChanger("#reducefont", "#increasefont", "#defaultfont"); 
-
-    //3D Mole Stuff 
-    pqr.threeDMole.activateResponsive();
+	//Home Page
+	if($("#main").hasClass("page-home")){
+		pqr.typeahead.activate("#molec-query");
+	}
 
 
+
+	//Molecule Page
+	if($("#main").hasClass("page-molecule")){
+		pqr.htmlUtilities.toolTipOptIn(); 
+   	 	pqr.htmlUtilities.updateMoleculeView();
+
+	    //Binding 
+	    pqr.bindevents.moleculeSizeChanger(); 
+	    pqr.bindevents.fontSizeChanger("#reducefont", "#increasefont", "#defaultfont");
+
+	    //3D Mole Stuff 
+    	pqr.threeDMole.activateResponsive();
+	}
+ 
+
+
+
+ 
+  
 });	
 
 /*************************Bind Events*************************/

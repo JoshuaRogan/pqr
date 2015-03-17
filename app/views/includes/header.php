@@ -30,7 +30,8 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Contact Us</a></li>
+          <li <?php if(substr($page, 0, strlen($page)-4) == "contact") echo "class='active'"; ?> ><a href="/contact">Contact Us</a></li>
+
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">

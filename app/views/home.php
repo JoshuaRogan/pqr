@@ -8,7 +8,7 @@
                     <form class="form-horizontal text-center form-inline" role="form" style="display:inline-block;">
                          <div class="form-group">
                               <div class="col-md-12">
-                                   <input type="molec" class="form-control" id="molec">
+                                   <input type="text" id="molec-query" class="form-control typeahead" placeholder="Enter Query">
                               </div>
                          </div>
                          <div class="form-group text-center">
