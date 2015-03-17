@@ -23,8 +23,9 @@
 		<!-- Search for molecules --> 
 
           <ul class="nav navbar-nav">
-            <li <?php if(substr($page, 0, strlen($page)-4) == "home") echo "class='active'"; ?> ><a href="/home">Home</a></li>
+            <!-- <li <?php if(substr($page, 0, strlen($page)-4) == "home") echo "class='active'"; ?> ><a href="/home">Home</a></li> -->
             <li <?php if(substr($page, 0, strlen($page)-4) == "browse") echo "class='active'"; ?> ><a href="/browse">Browse</a></li>
+            <li <?php if(substr($page, 0, strlen($page)-4) == "molecule") echo "class='active'"; ?> ><a href="/molecule">Molecule (Ex)</a></li>
             <li <?php if(substr($page, 0, strlen($page)-4) == "news") echo "class='active'"; ?> ><a href="/news">News</a></li>
           </ul>
 

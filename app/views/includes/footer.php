@@ -24,7 +24,7 @@
 
 			<div class="col-md-6">
 				<h3> About Us </h3>
-				<p> Fanny pack hashtag wolf, four dollar toast pork belly tousled cornhole tattooed flannel viral. Artisan chia keytar lumbersexual four loko Portland bitters Banksy tattooed locavore, umami you probably haven't heard of them kogi tilde occupy. Ennui seitan locavore, master cleanse cray church-key fingerstache Odd Future four dollar toast pug food truck actually ugh. Ennui pug salvia biodiesel actually. Heirloom VHS DIY meh. Hella butcher photo booth fap, jean shorts kogi swag VHS Portland 3 wolf moon direct trade viral fashion axe. Meditation High Life tofu organic.</p>
+				<p> Fanny pack hashtag wolf, master cleanse cray church-key fingerstache Odd Future four dollar toast pug food truck actually ugh. Ennui pug salvia biodiesel actually. Heirloom VHS DIY meh. Hella butcher photo booth fap, jean shorts kogi swag VHS Portland 3 wolf moon direct trade viral fashion axe. Meditation High Life tofu organic.</p>
 
 
 				<h4>Fanny pack hashtag wolf</h4>

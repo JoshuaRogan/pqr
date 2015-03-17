@@ -1,3 +1,26 @@
+/**
+ *  Font Size Classes 6 levels to add to js for global font-adjustment
+ *    font-# (1-6)
+ *
+ */
+body .font-1 {
+  font-size: 10px;
+}
+body font-2 {
+  font-size: 12px;
+}
+body font-3 {
+  font-size: 14px;
+}
+body font-4 {
+  font-size: 14px;
+}
+body font-5 {
+  font-size: 14px;
+}
+body font-6 {
+  font-size: 14px;
+}
 .container {
   padding-left: 2px;
   padding-right: 2px;
@@ -23,7 +46,16 @@ body nav .navbar-brand > img {
   margin-top: -10px;
   padding-left: 5px;
 }
-body .page-home h1#molecule-name {
+body .page-home #splash-search {
+  margin-top: 10px;
+}
+body .page-home #splash-search #num-compounds {
+  padding-top: 20px;
+}
+body .page-home #splash-search #num-compounds .number {
+  color: #d9534f;
+}
+body .page-molecule h1#molecule-name {
   font-size: 23px;
   padding-left: 10px;
   /* Small devices (tablets, 768px and up) */
@@ -31,24 +63,24 @@ body .page-home h1#molecule-name {
   /* Large devices (large desktops, 1200px and up) */
 }
 @media (min-width: 768px) {
-  body .page-home h1#molecule-name {
+  body .page-molecule h1#molecule-name {
     font-size: 30px;
   }
 }
 @media (min-width: 992px) {
-  body .page-home h1#molecule-name {
+  body .page-molecule h1#molecule-name {
     font-size: 32px;
   }
 }
 @media (min-width: 1200px) {
-  body .page-home h1#molecule-name {
+  body .page-molecule h1#molecule-name {
     font-size: 36px;
   }
 }
-body .page-home h1#molecule-name .small {
+body .page-molecule h1#molecule-name .small {
   padding-top: 5px;
 }
-body .page-home #molecule-properties h2 {
+body .page-molecule #molecule-properties h2 {
   font-size: 21px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -57,29 +89,54 @@ body .page-home #molecule-properties h2 {
   /* Large devices (large desktops, 1200px and up) */
 }
 @media (min-width: 768px) {
-  body .page-home #molecule-properties h2 {
+  body .page-molecule #molecule-properties h2 {
     font-size: 28px;
   }
 }
 @media (min-width: 992px) {
-  body .page-home #molecule-properties h2 {
+  body .page-molecule #molecule-properties h2 {
     font-size: 24px;
     margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
-  body .page-home #molecule-properties h2 {
+  body .page-molecule #molecule-properties h2 {
     font-size: 28px;
   }
 }
-body .page-home #molecule-properties h2 .properties-view-options {
+body .page-molecule #molecule-properties h2 .properties-view-options {
   font-size: 12px;
 }
-body .page-home #molecule-properties table tr td:first-of-type {
+body .page-molecule #molecule-properties table tr td:first-of-type {
   font-weight: bold;
 }
-body .page-home #molecule-properties table tbody .molecule-qr-code img {
+body .page-molecule #molecule-properties table tbody .molecule-qr-code img {
   max-width: 60%;
+}
+body .page-molecule #molecule-viewer div,
+body .page-molecule #molecule-viewer canvas {
+  height: 250px;
+  /* Small devices (tablets, 768px and up) */
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */
+}
+@media (min-width: 768px) {
+  body .page-molecule #molecule-viewer div,
+  body .page-molecule #molecule-viewer canvas {
+    height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  body .page-molecule #molecule-viewer div,
+  body .page-molecule #molecule-viewer canvas {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  body .page-molecule #molecule-viewer div,
+  body .page-molecule #molecule-viewer canvas {
+    height: 500px;
+  }
 }
 body footer {
   background-image: -webkit-linear-gradient(top, #5f9ea0 0%, #568e90 100%);
@@ -101,4 +158,14 @@ body footer a {
 }
 body footer a:hover {
   color: white;
+}
+/*****GLOBAL ELEMENTS ****/
+#reducefont {
+  font-size: 75%;
+}
+#increasefont {
+  font-size: 100%;
+}
+#defaultfont {
+  font-size: 75%;
 }

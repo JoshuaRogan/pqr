@@ -1,6 +1,8 @@
 //Import bootstrap variables and mixins to use variables 
 @import "bootstrap/variables.less";	
 @import "bootstrap/mixins.less";	
+@import "utils.less";
+
 
 //Bootstrap overrides 
 
@@ -30,6 +32,10 @@
     color: white;
 }
 
+
+
+
+
 body{
 	nav{
 		//Logo Placement in the navbar 
@@ -39,8 +45,28 @@ body{
 		}	
 	}
 
-	//Molecule/Homepage Styling 
+
+
+
+
+	//Home page styling 
 	.page-home{
+		#splash-search{
+			margin-top: 10px;
+
+			#num-compounds{
+				padding-top: 20px; 
+				.number{
+					color: @brand-danger; 
+				}
+			}
+		}
+	}
+
+
+
+	//Molecule Styling 
+	.page-molecule{
 		h1#molecule-name{
 			font-size: 23px;
 			padding-left: 10px;
@@ -58,6 +84,10 @@ body{
 
 
 		#molecule-properties{
+
+			//Workaround tooltip size
+			// .tooltip-inner { width:150px; max-width: 400px; } 
+
 			h2{
 				font-size: 21px;
 				margin-bottom: 0px; 
@@ -79,7 +109,7 @@ body{
 
 
 
-			//Table that holds all of the properties 
+			//Table that holds all of the properties for the molecule 
 			table{
 				tr td:first-of-type {
 					font-weight: bold; //Bold the first column 
@@ -93,12 +123,44 @@ body{
 					}
 				}
 				
-				
-
-
 			}
 		}
+
+		//3Dmol viewer
+		#molecule-viewer{
+			
+			//Make the 3dmole somewhat responsive 
+			div, canvas{
+				height: 250px;
+
+				/* Small devices (tablets, 768px and up) */
+				@media (min-width: @screen-sm-min){
+					height: 350px;
+				}
+				/* Medium devices (desktops, 992px and up) */
+				@media (min-width: @screen-md-min) {
+					height: 400px;
+				}
+				/* Large devices (large desktops, 1200px and up) */
+				@media (min-width: @screen-lg-min) {
+					height: 500px;
+				}
+			}
+
+		}
 	}
+
+
+	//Browsing Page Style
+	.page-browse{
+
+	}
+
+	//Contact US Styling 
+	.page-contact{
+
+	}
+
 
 	footer{
 		#gradient > .vertical(@theme-cadet-blue, darken(@theme-cadet-blue, 5%));
@@ -124,3 +186,19 @@ body{
 	}
 }
 
+
+
+/*****GLOBAL ELEMENTS ****/
+
+//Font size icons 
+#reducefont{
+	font-size: 75%;
+}
+
+#increasefont{
+	font-size: 100%;
+}
+
+#defaultfont{
+	font-size: 75%; 
+}
