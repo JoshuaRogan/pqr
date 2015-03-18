@@ -2,14 +2,14 @@
     <div class="container">
 
         <div class="row">
-
+            <h1> PQR in the News </h1>
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
 
                 <!-- Blog Post -->
 
                 <!-- Title -->
-                <h1>News Item</h1>
+                <h2>Article Title</h2>
 
                 <!-- Author -->
                 <p class="lead">

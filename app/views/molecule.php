@@ -22,20 +22,11 @@
 		<!-- Molecule name as h1 for SEO-->
 		<h1 id="molecule-name">
 			<a class="visible-xs-inline" href="#" data-toggle="modal" data-target="#qrcodemodal"><i class="fa fa-qrcode"></i></a> Methyl 2-Hydroxybenzoate
-		
-			<span class="pull-right">
-
-				<a href="#" data-container="body" data-toggle="tooltip" title="Decrease overall font size" id="reducefont">A</a>
-				<a href="#" data-container="body" data-toggle="tooltip" title="Increase overall font size" id="increasefont">A</a>
-				<a href="#" data-container="body" data-toggle="tooltip" title="Revert to the default font size" id="defaultfont"><i class="fa fa-undo"></i></a>
-				<!-- <a href="#"><i class="fa fa-expand"></i></a> -->
-			</span> 
 		</h1>
 
 
 		<!--This is where the canvas/img/js will be for the molecule viewer (Using an image for tempalte--> 
 		<div id="molecule-viewer" class="col-sm-12 col-md-7 col-md-push-5">
-			<!-- <img src="http://placehold.it/800x750" class="img-responsive">  -->
 			<div class='viewer_3Dmoljs' data-href='data/mol2/meth.mol2' data-type='mol2' data-backgroundcolor='0xffffff' data-style='sphere'></div>
 		</div>
 

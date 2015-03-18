@@ -1,42 +1,45 @@
+//Loaded on everypage
+
 //Namespaces
 var pqr = pqr || {};
 pqr.htmlUtilities = pqr.htmlUtilities || {}; //General DOM maniplating and such mostly using jquery 
 pqr.bindevents = pqr.bindevents || {}; //Any event binding should be done here if possible 
 pqr.propertiesFormatter = pqr.propertiesFormatter || {}; //Functions to properly format various ascpets of the molecules  
-
 pqr.threeDMole = pqr.threeDMole || {}; //Everything relating to 3dmol FILE: pqr.threedmol.js
-
 pqr.typeahead = pqr.typeahead || {}; //Everything relating to typeahead plugin 
 
 $(document).ready(function() {
 	
 	//All Pages 
-	pqr.htmlUtilities.fontSizeChanger(0);
+	pqr.htmlUtilities.toolTipOptIn(); 
+	pqr.htmlUtilities.fontSizeChanger(0); //Restore previous values 
+	pqr.bindevents.fontSizeChanger("#reducefont", "#increasefont", "#defaultfont");
+	pqr.typeahead.activate("#header-molecule-search");
 
 	//Home Page
 	if($("#main").hasClass("page-home")){
 		pqr.typeahead.activate("#molec-query");
 	}
 
+	//Browse Page
+	if($("#main").hasClass("page-browse")){
+		pqr.typeahead.activate("#molec-query");
+		pqr.htmlUtilities.toolTipOptIn(); 
+	}
 
 
 	//Molecule Page
 	if($("#main").hasClass("page-molecule")){
-		pqr.htmlUtilities.toolTipOptIn(); 
+		
    	 	pqr.htmlUtilities.updateMoleculeView();
 
 	    //Binding 
 	    pqr.bindevents.moleculeSizeChanger(); 
-	    pqr.bindevents.fontSizeChanger("#reducefont", "#increasefont", "#defaultfont");
 
 	    //3D Mole Stuff 
     	pqr.threeDMole.activateResponsive();
 	}
- 
 
-
-
- 
   
 });	
 
@@ -114,8 +117,6 @@ pqr.htmlUtilities.updateMoleculeView = function(){
 			if(localStorage.getItem("moleculeLayout") == "detailed") $("#molecule-details table .detailed").removeClass("hidden"); //Probably not necessary 
 			else $("#molecule-details table .detailed").addClass("hidden"); 
 		}
-
-
 	}
 }
 

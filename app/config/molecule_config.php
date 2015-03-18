@@ -13,7 +13,7 @@ class config extends global_config{
 	public static $pageDescription 		= "Description for the molecule page"; 
 
 	public static $stylesheets 			= array("styles/bootstrap.css", "styles/stylesheet.css"); //Include stylesheets 
-	public static $javascript 			= array("http://cdn.jsdelivr.net/3dmol.js/latest/3Dmol-nojquery-min.js", "js/index.js", "js/pqr.threeDmol.js"); //Include javascript files ", 
+	public static $javascript 			= array("http://cdn.jsdelivr.net/3dmol.js/latest/3Dmol-nojquery-min.js", "js/pqr.threeDmol.js"); //Include javascript files ", 
 
 	public static $header				= "header"; //False if no header file otherwise the file name in the /app/views/includes/foo.php 
 	public static $footer 				= "footer";	//Same as header 

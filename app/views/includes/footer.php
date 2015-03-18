@@ -40,7 +40,7 @@
 
 			<div class="col-md-3">
 				<h3> Report a Problem </h3>
-				<p> Found a problem? <a href="/report-problem">Report it here!</a> </p>
+				<p> Found a problem? <a href="/contact">Report it here!</a> </p>
 				<img class="img-responsive right-block" alt="footer-logo" src="img/footer-logo.png" width="80px">
 			</div>
 
@@ -56,10 +56,10 @@
 			</ul>
 
 			<ul class="list-inline text-center">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Browse</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Acknowledgments</a></li>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/browse">Browse</a></li>
+				<li><a href="/news">News</a></li>
+				<li><a href="/acknowledgments">Acknowledgments</a></li>
 			</ul>
 		</div>
 	</div>

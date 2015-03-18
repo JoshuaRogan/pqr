@@ -24,17 +24,24 @@ pqr.typeahead.substringmatcher = function(strs) {
   };
 };
 
+pqr.typeahead.activateNoBs = function(inputSelector){
+
+  $(inputSelector).typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 2
+  },
+  {
+    name: 'molecules',
+    displayKey: 'value',
+      source: pqr.typeahead.substringmatcher(pqr.typeahead.data)
+  });
+
+  $('.tt-query').css('background-color','#fff');
+
+};
+
+//Bootstrap-typeahead
 pqr.typeahead.activate = function(inputSelector){
-
-	$(inputSelector).typeahead({
-		hint: true,
-		highlight: true,
-		minLength: 2
-	},
-	{
-		name: 'molecules',
-		displayKey: 'value',
-  		source: pqr.typeahead.substringmatcher(pqr.typeahead.data)
-	});
-
+  $(inputSelector).typeahead({source: pqr.typeahead.data});
 };

@@ -1,20 +1,18 @@
 <div class="container">
      <div class="row clearfix" id="splash-search">
-          <div class="col-md-12 column">
+          <div class="col-md-12">
                <div class="jumbotron text-center">
                     <h2>Pitt Quantum Repository</h2>
                     <p>Enter your molecule name, inCHI key, or &lt;any ID&gt; </p>
                     
-                    <form class="form-horizontal text-center form-inline" role="form" style="display:inline-block;">
-                         <div class="form-group">
-                              <div class="col-md-12">
-                                   <input type="text" id="molec-query" class="form-control typeahead" placeholder="Enter Query">
-                              </div>
-                         </div>
-                         <div class="form-group text-center">
-                              <div class="col-md-12">
-                                   <button type="submit" class="btn btn-default">Search</button>
-                              </div>
+                    <form class="text-center form-inline" role="form">
+                         <div class="input-group">
+                              <input type="text" id="molec-query" class="form-control typeahead" autocomplete="off"  placeholder="Enter Query">
+                              <span class="input-group-btn">
+                                   <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                   </button>
+                              </span>
                          </div>
                     </form>
 
@@ -26,13 +24,17 @@
      <div class="row">
           <div class="col-md-6">
                <h2> Welcome to Pitt Quantum Repository! </h2>
-               <p> Check out the molecule of the week, news, or search for a molecule above. </p>
-               <div class="list-group">
-                    <a href="#" class="list-group-item">Cras justo odio</a>
-                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                    <a href="#" class="list-group-item">Morbi leo risus</a>
-                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+               <p> Check out the molecule of the week, news, links, or search for a molecule above. </p>
+               <div class="list-group other-content">
+                    <a href="#" class="list-group-item"><span class="badge">New</span><i class="fa fa-newspaper-o"></i> Cras justo odio</a>
+                    <a href="#" class="list-group-item"><span class="badge">New</span><i class="fa fa-link"></i> Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Morbi leo risus</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-link"></i> Vestibulum at eros</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Morbi leo risus</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-link"></i> Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-newspaper-o"></i> Cras justo odio</a>
+                    <a href="#" class="list-group-item"><i class="fa fa-link"></i> Dapibus ac facilisis in</a>
                </div>
           </div>
 
@@ -41,10 +43,12 @@
                <h2> Molecule of the Week </h2>
                <p> Explore new molecules weekly via the molecule of the week module! Click the molecule name to get more information.  </p>
                <h3> <a href="/molecule"> Methyl 2-Hydroxybenzoate </a></h3>
-               
-               <div id="molecule-graphic"> 
-                    <img src="http://placehold.it/400x400" class="img-responsive center-block"> 
+
+               <div id="molecule-viewer">
+                    <div class='viewer_3Dmoljs' data-href='data/mol2/meth.mol2' data-type='mol2' data-backgroundcolor='0xffffff' data-style='sphere'></div>
                </div>
+
+
           </div>
 
      </div>
