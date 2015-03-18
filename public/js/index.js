@@ -1,6 +1,6 @@
 //Loaded on everypage
 
-//Namespaces
+//Namespaces (Might have to be on every js page)
 var pqr = pqr || {};
 pqr.htmlUtilities = pqr.htmlUtilities || {}; //General DOM maniplating and such mostly using jquery 
 pqr.bindevents = pqr.bindevents || {}; //Any event binding should be done here if possible 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	    pqr.bindevents.moleculeSizeChanger(); 
 
 	    //3D Mole Stuff 
-    	pqr.threeDMole.activateResponsive();
+    	// pqr.threeDMole.activateResponsive();
 	}
 
   

@@ -61,13 +61,21 @@
 				</ul>
             </li>
 
-			<li>       
+<!-- 			       <li>       
               <p class="navbar-text">
                 <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Decrease overall font size" id="reducefont">A</a>
                 <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Increase overall font size" id="increasefont">A</a>
                 <a href="#" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Revert to the default font size" id="defaultfont"><i class="fa fa-undo"></i></a>
               </p> 
-            </li> 
+            </li>  -->
+
+            <li> 
+              <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-primary navbar-btn" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Decrease overall font size" id="reducefont"><i class="fa fa-font"></i> <i class="fa fa-arrow-down"></i></button>
+                <button type="button" class="btn btn-primary navbar-btn" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Increase overall font size" id="increasefont"><i class="fa fa-font"></i> <i class="fa fa-arrow-up"></i></button>
+                <button type="button" class="btn btn-primary navbar-btn" data-container="body" data-toggle="tooltip" data-placement="bottom" title="Revert to the default font size" id="defaultfont"><i class="fa fa-undo"></i></button>
+              </div>
+            </li>
 
 
           </ul> 
